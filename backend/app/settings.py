@@ -84,12 +84,13 @@ DATABASES = {
     }
 }
 
+ALLOWED_HOSTS = ["*"]
+
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  
-    "http://localhost:3001",
+    "localhost", 
+    "127.0.0.1",
     "https://trip-planner-vroq.onrender.com"
 ]
-
 
 
 # Password validation
