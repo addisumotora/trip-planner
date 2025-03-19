@@ -6,7 +6,7 @@ const MapComponent = ({ coordinates }) => {
   useEffect(() => {
     const map = new maplibregl.Map({
       container: 'map', 
-      style: `https://api.maptiler.com/maps/streets/style.json?key=bEgUDjxPukQYVGoQ9Jw2`, 
+      style: `https://api.maptiler.com/maps/streets/style.json?key=${process.env.REACT_APP_MAP_KEY}`, 
       center: coordinates[0], 
       zoom: 5,
     });

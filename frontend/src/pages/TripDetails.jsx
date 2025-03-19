@@ -11,7 +11,7 @@ const TripDetails = () => {
   useEffect(() => {
     const fetchTrip = async () => {
       const response = await axios.get(
-        `http://localhost:8000/api/trips/${id}/`
+        `${process.env.REACT_APP_BACKEND_URL}/api/trips/${id}/`
       );
       setTrip(response.data);
     };

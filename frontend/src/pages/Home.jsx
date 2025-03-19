@@ -17,7 +17,7 @@ const Home = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/trips/",
+        `${process.env.REACT_APP_BACKEND_URL}/api/trips/`,
         formData
       );
       navigate(`/trip/${response.data.id}`);
