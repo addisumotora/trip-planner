@@ -90,6 +90,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://trip-planner-vroq.onrender.com", 
     "http://localhost:3001", 
     "http://127.0.0.1:3000", 
+    "https://trip-planner-prkg.vercel.app",
 ]
 
 
