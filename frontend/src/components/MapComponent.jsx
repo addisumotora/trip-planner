@@ -2,10 +2,11 @@ import React, { useEffect } from 'react';
 import maplibregl from 'maplibre-gl';
 
 const MapComponent = ({ coordinates }) => {
+  console.log(process.env.REACT_APP_MAP_KEY)
   useEffect(() => {
     const map = new maplibregl.Map({
       container: 'map', 
-      style: `https://api.maptiler.com/maps/streets/style.json?key=${process.env.REACT_APP_MAP_KEY}`, 
+      style: `https://api.maptiler.com/maps/streets/style.json?key=bEgUDjxPukQYVGoQ9Jw2`, 
       center: coordinates[0], 
       zoom: 5,
     });

@@ -87,9 +87,9 @@ DATABASES = {
 ALLOWED_HOSTS = ["*"]
 
 CORS_ALLOWED_ORIGINS = [
-    "localhost", 
-    "127.0.0.1",
-    "https://trip-planner-vroq.onrender.com"
+    "https://trip-planner-vroq.onrender.com", 
+    "http://localhost:3000", 
+    "http://127.0.0.1:3000", 
 ]
 
 
