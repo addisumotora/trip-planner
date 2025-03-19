@@ -87,7 +87,7 @@ DATABASES = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  
     "http://localhost:3001",
-    "trip-planner-vroq.onrender.com"
+    "https://trip-planner-vroq.onrender.com"
 ]
 
 
